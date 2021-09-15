@@ -1,9 +1,10 @@
 
-
+import os
+Key=os.getenv('Key')
 pip install adafruit-io
 
 from Adafruit_IO import Client
-aio = Client('poojitha02','aio_fIrs00Gt0br0nLfin9UPjcMlMS05')
+aio = Client('poojitha02','Key')
 pip install python-telegram-bot==13.0 --quite
 
 from telegram.ext import Updater, MessageHandler, Filters
